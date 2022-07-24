@@ -35,7 +35,7 @@ int main() {
 	//file << jsonfile;
 	//file.close();
 
-
+	std::cout << "chuj hahaha" << std::endl;
 	Settings::updateSettings();
 	//std::cout << std::format("a{}", 42);
 	Game game;

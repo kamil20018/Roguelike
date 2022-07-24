@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Rougelike/v17/Browse.VC.db-shm
+/.vs/Rougelike/v17/ipch/AutoPCH/a7b2fd3f83a42971/SOURCE.ipch
+/.vs/Rougelike/v17/Browse.VC.db-wal
+/.vs/Rougelike/v17/Browse.VC.opendb
+/.vs/Rougelike/v17/Browse.VC.db
+/.vs/Rougelike/v17/.suo
+/.vs/slnx.sqlite
+/x64/Debug
