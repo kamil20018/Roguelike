@@ -9,6 +9,5 @@
 /.vs/Rougelike/v17/Browse.VC.db
 /.vs/Rougelike/v17/.suo
 /.vs/slnx.sqlite
-/x64/Debug
 *.obj
-x64/
+/x64
