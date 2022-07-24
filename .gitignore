@@ -11,3 +11,4 @@
 /.vs/slnx.sqlite
 /x64/Debug
 *.obj
+x64/
