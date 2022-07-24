@@ -1,0 +1,2861 @@
+{
+    "actorManager": {
+        "centerChunk": [
+            -1,
+            -21
+        ],
+        "enemyChunks": [
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            45,
+                            5
+                        ]
+                    },
+                    {
+                        "position": [
+                            46,
+                            6
+                        ]
+                    },
+                    {
+                        "position": [
+                            44,
+                            4
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    0
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -116,
+                            -317
+                        ]
+                    },
+                    {
+                        "position": [
+                            -119,
+                            -324
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -11
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -31,
+                            13
+                        ]
+                    },
+                    {
+                        "position": [
+                            -37,
+                            0
+                        ]
+                    },
+                    {
+                        "position": [
+                            -38,
+                            11
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    0
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -74,
+                            -353
+                        ]
+                    },
+                    {
+                        "position": [
+                            -73,
+                            -342
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -12
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -193,
+                            -115
+                        ]
+                    },
+                    {
+                        "position": [
+                            -186,
+                            -111
+                        ]
+                    },
+                    {
+                        "position": [
+                            -192,
+                            -118
+                        ]
+                    }
+                ],
+                "position": [
+                    -5,
+                    -4
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -152,
+                            -54
+                        ]
+                    },
+                    {
+                        "position": [
+                            -159,
+                            -57
+                        ]
+                    },
+                    {
+                        "position": [
+                            -160,
+                            -56
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -2
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -67,
+                            -448
+                        ]
+                    },
+                    {
+                        "position": [
+                            -79,
+                            -446
+                        ]
+                    },
+                    {
+                        "position": [
+                            -43,
+                            -436
+                        ]
+                    },
+                    {
+                        "position": [
+                            -41,
+                            -438
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -15
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -30,
+                            36
+                        ]
+                    },
+                    {
+                        "position": [
+                            -31,
+                            35
+                        ]
+                    },
+                    {
+                        "position": [
+                            -34,
+                            38
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -157,
+                            -153
+                        ]
+                    },
+                    {
+                        "position": [
+                            -149,
+                            -169
+                        ]
+                    },
+                    {
+                        "position": [
+                            -158,
+                            -155
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -6
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -17,
+                            -15
+                        ]
+                    },
+                    {
+                        "position": [
+                            -34,
+                            -18
+                        ]
+                    },
+                    {
+                        "position": [
+                            -39,
+                            -18
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -74,
+                            -232
+                        ]
+                    },
+                    {
+                        "position": [
+                            -72,
+                            -230
+                        ]
+                    },
+                    {
+                        "position": [
+                            -71,
+                            -229
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -8
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            45,
+                            -25
+                        ]
+                    },
+                    {
+                        "position": [
+                            46,
+                            -24
+                        ]
+                    },
+                    {
+                        "position": [
+                            44,
+                            -26
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    -1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            10,
+                            36
+                        ]
+                    },
+                    {
+                        "position": [
+                            11,
+                            34
+                        ]
+                    },
+                    {
+                        "position": [
+                            1,
+                            30
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            45,
+                            35
+                        ]
+                    },
+                    {
+                        "position": [
+                            46,
+                            36
+                        ]
+                    },
+                    {
+                        "position": [
+                            44,
+                            34
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            4,
+                            -23
+                        ]
+                    },
+                    {
+                        "position": [
+                            1,
+                            -6
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -78,
+                            10
+                        ]
+                    },
+                    {
+                        "position": [
+                            -78,
+                            14
+                        ]
+                    },
+                    {
+                        "position": [
+                            -76,
+                            4
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    0
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            22,
+                            13
+                        ]
+                    },
+                    {
+                        "position": [
+                            6,
+                            4
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -235,
+                            -262
+                        ]
+                    },
+                    {
+                        "position": [
+                            -233,
+                            -263
+                        ]
+                    },
+                    {
+                        "position": [
+                            -240,
+                            -261
+                        ]
+                    }
+                ],
+                "position": [
+                    -6,
+                    -9
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -80,
+                            39
+                        ]
+                    },
+                    {
+                        "position": [
+                            -73,
+                            36
+                        ]
+                    },
+                    {
+                        "position": [
+                            -80,
+                            33
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -46,
+                            -22
+                        ]
+                    },
+                    {
+                        "position": [
+                            -79,
+                            -16
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -157,
+                            -135
+                        ]
+                    },
+                    {
+                        "position": [
+                            -128,
+                            -149
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -5
+                ]
+            },
+            {
+                "position": [
+                    -2,
+                    -3
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -21,
+                            -41
+                        ]
+                    },
+                    {
+                        "position": [
+                            -1,
+                            -49
+                        ]
+                    },
+                    {
+                        "position": [
+                            -3,
+                            -54
+                        ]
+                    },
+                    {
+                        "position": [
+                            -5,
+                            -34
+                        ]
+                    },
+                    {
+                        "position": [
+                            -38,
+                            -53
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -2
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            6,
+                            -51
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -2
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -69,
+                            -55
+                        ]
+                    },
+                    {
+                        "position": [
+                            -62,
+                            -34
+                        ]
+                    },
+                    {
+                        "position": [
+                            -46,
+                            -50
+                        ]
+                    },
+                    {
+                        "position": [
+                            -76,
+                            -53
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -2
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            4,
+                            -351
+                        ]
+                    },
+                    {
+                        "position": [
+                            6,
+                            -356
+                        ]
+                    },
+                    {
+                        "position": [
+                            9,
+                            -359
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -12
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -109,
+                            -22
+                        ]
+                    },
+                    {
+                        "position": [
+                            -82,
+                            -21
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -1
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -117,
+                            5
+                        ]
+                    },
+                    {
+                        "position": [
+                            -113,
+                            6
+                        ]
+                    },
+                    {
+                        "position": [
+                            -115,
+                            5
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    0
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            6,
+                            -626
+                        ]
+                    },
+                    {
+                        "position": [
+                            5,
+                            -624
+                        ]
+                    },
+                    {
+                        "position": [
+                            4,
+                            -625
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -21
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -32,
+                            -343
+                        ]
+                    },
+                    {
+                        "position": [
+                            -28,
+                            -343
+                        ]
+                    },
+                    {
+                        "position": [
+                            -31,
+                            -336
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -12
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -200,
+                            -201
+                        ]
+                    },
+                    {
+                        "position": [
+                            -192,
+                            -207
+                        ]
+                    },
+                    {
+                        "position": [
+                            -192,
+                            -209
+                        ]
+                    }
+                ],
+                "position": [
+                    -5,
+                    -7
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -110,
+                            -51
+                        ]
+                    },
+                    {
+                        "position": [
+                            -107,
+                            -53
+                        ]
+                    },
+                    {
+                        "position": [
+                            -110,
+                            -46
+                        ]
+                    },
+                    {
+                        "position": [
+                            -83,
+                            -35
+                        ]
+                    },
+                    {
+                        "position": [
+                            -112,
+                            -37
+                        ]
+                    },
+                    {
+                        "position": [
+                            -118,
+                            -33
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -2
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -116,
+                            -146
+                        ]
+                    },
+                    {
+                        "position": [
+                            -107,
+                            -148
+                        ]
+                    },
+                    {
+                        "position": [
+                            -116,
+                            -126
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -5
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -33,
+                            -86
+                        ]
+                    },
+                    {
+                        "position": [
+                            -38,
+                            -75
+                        ]
+                    },
+                    {
+                        "position": [
+                            -27,
+                            -81
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -3
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -112,
+                            -86
+                        ]
+                    },
+                    {
+                        "position": [
+                            -114,
+                            -83
+                        ]
+                    },
+                    {
+                        "position": [
+                            -86,
+                            -82
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -3
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -238,
+                            -196
+                        ]
+                    },
+                    {
+                        "position": [
+                            -238,
+                            -206
+                        ]
+                    }
+                ],
+                "position": [
+                    -6,
+                    -7
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -69,
+                            -118
+                        ]
+                    },
+                    {
+                        "position": [
+                            -77,
+                            -107
+                        ]
+                    },
+                    {
+                        "position": [
+                            -76,
+                            -112
+                        ]
+                    },
+                    {
+                        "position": [
+                            -80,
+                            -93
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -4
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -33,
+                            -104
+                        ]
+                    },
+                    {
+                        "position": [
+                            -33,
+                            -118
+                        ]
+                    },
+                    {
+                        "position": [
+                            -32,
+                            -117
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -4
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -31,
+                            -296
+                        ]
+                    },
+                    {
+                        "position": [
+                            -32,
+                            -291
+                        ]
+                    },
+                    {
+                        "position": [
+                            -29,
+                            -298
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -10
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -197,
+                            -146
+                        ]
+                    },
+                    {
+                        "position": [
+                            -187,
+                            -146
+                        ]
+                    }
+                ],
+                "position": [
+                    -5,
+                    -5
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -114,
+                            -111
+                        ]
+                    },
+                    {
+                        "position": [
+                            -107,
+                            -97
+                        ]
+                    },
+                    {
+                        "position": [
+                            -86,
+                            -99
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -4
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -155,
+                            -85
+                        ]
+                    },
+                    {
+                        "position": [
+                            -154,
+                            -84
+                        ]
+                    },
+                    {
+                        "position": [
+                            -156,
+                            -86
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -3
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -156,
+                            -116
+                        ]
+                    },
+                    {
+                        "position": [
+                            -154,
+                            -114
+                        ]
+                    },
+                    {
+                        "position": [
+                            -156,
+                            -116
+                        ]
+                    },
+                    {
+                        "position": [
+                            -124,
+                            -109
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -4
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -67,
+                            -297
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -10
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -74,
+                            -145
+                        ]
+                    },
+                    {
+                        "position": [
+                            -64,
+                            -139
+                        ]
+                    },
+                    {
+                        "position": [
+                            -72,
+                            -146
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -5
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -113,
+                            -173
+                        ]
+                    },
+                    {
+                        "position": [
+                            -114,
+                            -177
+                        ]
+                    },
+                    {
+                        "position": [
+                            -111,
+                            -175
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -6
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -30,
+                            -474
+                        ]
+                    },
+                    {
+                        "position": [
+                            -20,
+                            -470
+                        ]
+                    },
+                    {
+                        "position": [
+                            -27,
+                            -473
+                        ]
+                    },
+                    {
+                        "position": [
+                            -2,
+                            -463
+                        ]
+                    },
+                    {
+                        "position": [
+                            -2,
+                            -470
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -16
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -195,
+                            -84
+                        ]
+                    },
+                    {
+                        "position": [
+                            -194,
+                            -84
+                        ]
+                    },
+                    {
+                        "position": [
+                            -194,
+                            -88
+                        ]
+                    }
+                ],
+                "position": [
+                    -5,
+                    -3
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -179,
+                            -155
+                        ]
+                    },
+                    {
+                        "position": [
+                            -189,
+                            -170
+                        ]
+                    },
+                    {
+                        "position": [
+                            -171,
+                            -170
+                        ]
+                    },
+                    {
+                        "position": [
+                            -162,
+                            -161
+                        ]
+                    },
+                    {
+                        "position": [
+                            -183,
+                            -175
+                        ]
+                    }
+                ],
+                "position": [
+                    -5,
+                    -6
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -72,
+                            -261
+                        ]
+                    },
+                    {
+                        "position": [
+                            -75,
+                            -269
+                        ]
+                    },
+                    {
+                        "position": [
+                            -70,
+                            -264
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -9
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -140,
+                            -201
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -7
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -35,
+                            -263
+                        ]
+                    },
+                    {
+                        "position": [
+                            -37,
+                            -269
+                        ]
+                    },
+                    {
+                        "position": [
+                            -34,
+                            -266
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -9
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -105,
+                            -208
+                        ]
+                    },
+                    {
+                        "position": [
+                            -115,
+                            -204
+                        ]
+                    },
+                    {
+                        "position": [
+                            -113,
+                            -207
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -7
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -134,
+                            -261
+                        ]
+                    },
+                    {
+                        "position": [
+                            -153,
+                            -264
+                        ]
+                    },
+                    {
+                        "position": [
+                            -122,
+                            -268
+                        ]
+                    },
+                    {
+                        "position": [
+                            -147,
+                            -270
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -9
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -236,
+                            -174
+                        ]
+                    },
+                    {
+                        "position": [
+                            -220,
+                            -174
+                        ]
+                    },
+                    {
+                        "position": [
+                            -239,
+                            -170
+                        ]
+                    }
+                ],
+                "position": [
+                    -6,
+                    -6
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -35,
+                            -321
+                        ]
+                    },
+                    {
+                        "position": [
+                            -32,
+                            -318
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -11
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -238,
+                            -143
+                        ]
+                    },
+                    {
+                        "position": [
+                            -227,
+                            -137
+                        ]
+                    },
+                    {
+                        "position": [
+                            -238,
+                            -142
+                        ]
+                    },
+                    {
+                        "position": [
+                            -201,
+                            -148
+                        ]
+                    }
+                ],
+                "position": [
+                    -6,
+                    -5
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -190,
+                            -230
+                        ]
+                    }
+                ],
+                "position": [
+                    -5,
+                    -8
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -72,
+                            -402
+                        ]
+                    },
+                    {
+                        "position": [
+                            -76,
+                            -411
+                        ]
+                    },
+                    {
+                        "position": [
+                            -71,
+                            -417
+                        ]
+                    },
+                    {
+                        "position": [
+                            -74,
+                            -392
+                        ]
+                    },
+                    {
+                        "position": [
+                            -67,
+                            -396
+                        ]
+                    },
+                    {
+                        "position": [
+                            -49,
+                            -413
+                        ]
+                    },
+                    {
+                        "position": [
+                            -44,
+                            -395
+                        ]
+                    },
+                    {
+                        "position": [
+                            -65,
+                            -393
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -14
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -150,
+                            -230
+                        ]
+                    },
+                    {
+                        "position": [
+                            -150,
+                            -234
+                        ]
+                    },
+                    {
+                        "position": [
+                            -159,
+                            -216
+                        ]
+                    },
+                    {
+                        "position": [
+                            -149,
+                            -215
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -8
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -228,
+                            -236
+                        ]
+                    },
+                    {
+                        "position": [
+                            -237,
+                            -223
+                        ]
+                    },
+                    {
+                        "position": [
+                            -237,
+                            -234
+                        ]
+                    },
+                    {
+                        "position": [
+                            -236,
+                            -215
+                        ]
+                    }
+                ],
+                "position": [
+                    -6,
+                    -8
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -191,
+                            -251
+                        ]
+                    },
+                    {
+                        "position": [
+                            -200,
+                            -264
+                        ]
+                    },
+                    {
+                        "position": [
+                            -192,
+                            -269
+                        ]
+                    },
+                    {
+                        "position": [
+                            -165,
+                            -249
+                        ]
+                    },
+                    {
+                        "position": [
+                            -192,
+                            -243
+                        ]
+                    },
+                    {
+                        "position": [
+                            -190,
+                            -242
+                        ]
+                    }
+                ],
+                "position": [
+                    -5,
+                    -9
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -107,
+                            -225
+                        ]
+                    },
+                    {
+                        "position": [
+                            -118,
+                            -232
+                        ]
+                    },
+                    {
+                        "position": [
+                            -113,
+                            -238
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -8
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -100,
+                            -260
+                        ]
+                    },
+                    {
+                        "position": [
+                            -110,
+                            -270
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -9
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -151,
+                            -295
+                        ]
+                    },
+                    {
+                        "position": [
+                            -150,
+                            -296
+                        ]
+                    },
+                    {
+                        "position": [
+                            -159,
+                            -293
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -10
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -117,
+                            -294
+                        ]
+                    },
+                    {
+                        "position": [
+                            -97,
+                            -280
+                        ]
+                    },
+                    {
+                        "position": [
+                            -118,
+                            -299
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -10
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -198,
+                            -299
+                        ]
+                    },
+                    {
+                        "position": [
+                            -197,
+                            -291
+                        ]
+                    },
+                    {
+                        "position": [
+                            -198,
+                            -295
+                        ]
+                    }
+                ],
+                "position": [
+                    -5,
+                    -10
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -71,
+                            -322
+                        ]
+                    },
+                    {
+                        "position": [
+                            -61,
+                            -313
+                        ]
+                    },
+                    {
+                        "position": [
+                            -75,
+                            -301
+                        ]
+                    },
+                    {
+                        "position": [
+                            -70,
+                            -305
+                        ]
+                    },
+                    {
+                        "position": [
+                            -65,
+                            -327
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -11
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -160,
+                            -330
+                        ]
+                    },
+                    {
+                        "position": [
+                            -158,
+                            -322
+                        ]
+                    },
+                    {
+                        "position": [
+                            -158,
+                            -330
+                        ]
+                    }
+                ],
+                "position": [
+                    -4,
+                    -11
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            8,
+                            -566
+                        ]
+                    },
+                    {
+                        "position": [
+                            11,
+                            -568
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -19
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -117,
+                            -345
+                        ]
+                    },
+                    {
+                        "position": [
+                            -118,
+                            -355
+                        ]
+                    },
+                    {
+                        "position": [
+                            -113,
+                            -352
+                        ]
+                    },
+                    {
+                        "position": [
+                            -120,
+                            -333
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -12
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -68,
+                            -367
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -13
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -33,
+                            -369
+                        ]
+                    },
+                    {
+                        "position": [
+                            -36,
+                            -389
+                        ]
+                    },
+                    {
+                        "position": [
+                            -34,
+                            -390
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -13
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -120,
+                            -386
+                        ]
+                    },
+                    {
+                        "position": [
+                            -118,
+                            -383
+                        ]
+                    },
+                    {
+                        "position": [
+                            -104,
+                            -388
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -13
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            1,
+                            -379
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -13
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            2,
+                            -324
+                        ]
+                    },
+                    {
+                        "position": [
+                            2,
+                            -323
+                        ]
+                    },
+                    {
+                        "position": [
+                            7,
+                            -326
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -11
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -32,
+                            -416
+                        ]
+                    },
+                    {
+                        "position": [
+                            -32,
+                            -407
+                        ]
+                    },
+                    {
+                        "position": [
+                            -10,
+                            -402
+                        ]
+                    },
+                    {
+                        "position": [
+                            -8,
+                            -412
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -14
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            2,
+                            -398
+                        ]
+                    },
+                    {
+                        "position": [
+                            4,
+                            -410
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -14
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -35,
+                            -442
+                        ]
+                    },
+                    {
+                        "position": [
+                            -2,
+                            -429
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -15
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            1,
+                            -436
+                        ]
+                    },
+                    {
+                        "position": [
+                            33,
+                            -432
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -15
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            16,
+                            -478
+                        ]
+                    },
+                    {
+                        "position": [
+                            7,
+                            -460
+                        ]
+                    },
+                    {
+                        "position": [
+                            39,
+                            -461
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -16
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -72,
+                            -474
+                        ]
+                    },
+                    {
+                        "position": [
+                            -75,
+                            -474
+                        ]
+                    },
+                    {
+                        "position": [
+                            -73,
+                            -473
+                        ]
+                    },
+                    {
+                        "position": [
+                            -78,
+                            -451
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -16
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            56,
+                            -440
+                        ]
+                    },
+                    {
+                        "position": [
+                            56,
+                            -442
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    -15
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            48,
+                            -476
+                        ]
+                    },
+                    {
+                        "position": [
+                            44,
+                            -451
+                        ]
+                    },
+                    {
+                        "position": [
+                            45,
+                            -477
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    -16
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            58,
+                            -416
+                        ]
+                    },
+                    {
+                        "position": [
+                            50,
+                            -405
+                        ]
+                    },
+                    {
+                        "position": [
+                            45,
+                            -415
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    -14
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            15,
+                            -490
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -17
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            54,
+                            -504
+                        ]
+                    },
+                    {
+                        "position": [
+                            58,
+                            -495
+                        ]
+                    },
+                    {
+                        "position": [
+                            56,
+                            -498
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    -17
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -34,
+                            -503
+                        ]
+                    },
+                    {
+                        "position": [
+                            -32,
+                            -506
+                        ]
+                    },
+                    {
+                        "position": [
+                            -1,
+                            -509
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -17
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            6,
+                            -531
+                        ]
+                    },
+                    {
+                        "position": [
+                            26,
+                            -520
+                        ]
+                    },
+                    {
+                        "position": [
+                            2,
+                            -525
+                        ]
+                    },
+                    {
+                        "position": [
+                            0,
+                            -519
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -18
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            50,
+                            -531
+                        ]
+                    },
+                    {
+                        "position": [
+                            46,
+                            -535
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    -18
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -22,
+                            -527
+                        ]
+                    },
+                    {
+                        "position": [
+                            -29,
+                            -532
+                        ]
+                    },
+                    {
+                        "position": [
+                            -6,
+                            -535
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -18
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            46,
+                            -565
+                        ]
+                    },
+                    {
+                        "position": [
+                            45,
+                            -565
+                        ]
+                    },
+                    {
+                        "position": [
+                            45,
+                            -565
+                        ]
+                    }
+                ],
+                "position": [
+                    1,
+                    -19
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -9,
+                            -554
+                        ]
+                    },
+                    {
+                        "position": [
+                            -34,
+                            -557
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -19
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -70,
+                            -535
+                        ]
+                    },
+                    {
+                        "position": [
+                            -69,
+                            -517
+                        ]
+                    },
+                    {
+                        "position": [
+                            -76,
+                            -538
+                        ]
+                    },
+                    {
+                        "position": [
+                            -42,
+                            -532
+                        ]
+                    },
+                    {
+                        "position": [
+                            -77,
+                            -512
+                        ]
+                    },
+                    {
+                        "position": [
+                            -43,
+                            -520
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -18
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -75,
+                            -504
+                        ]
+                    },
+                    {
+                        "position": [
+                            -73,
+                            -508
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -17
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -71,
+                            -552
+                        ]
+                    },
+                    {
+                        "position": [
+                            -72,
+                            -566
+                        ]
+                    },
+                    {
+                        "position": [
+                            -43,
+                            -568
+                        ]
+                    },
+                    {
+                        "position": [
+                            -79,
+                            -569
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -19
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -38,
+                            -590
+                        ]
+                    },
+                    {
+                        "position": [
+                            -40,
+                            -581
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -20
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            8,
+                            -597
+                        ]
+                    },
+                    {
+                        "position": [
+                            11,
+                            -590
+                        ]
+                    },
+                    {
+                        "position": [
+                            6,
+                            -589
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -20
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -53,
+                            -583
+                        ]
+                    },
+                    {
+                        "position": [
+                            -80,
+                            -600
+                        ]
+                    },
+                    {
+                        "position": [
+                            -49,
+                            -592
+                        ]
+                    },
+                    {
+                        "position": [
+                            -78,
+                            -597
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -20
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -119,
+                            -565
+                        ]
+                    },
+                    {
+                        "position": [
+                            -120,
+                            -557
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -19
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -112,
+                            -536
+                        ]
+                    },
+                    {
+                        "position": [
+                            -113,
+                            -534
+                        ]
+                    },
+                    {
+                        "position": [
+                            -118,
+                            -540
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -18
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -109,
+                            -579
+                        ]
+                    },
+                    {
+                        "position": [
+                            -119,
+                            -599
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -20
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -77,
+                            -626
+                        ]
+                    },
+                    {
+                        "position": [
+                            -64,
+                            -617
+                        ]
+                    },
+                    {
+                        "position": [
+                            -67,
+                            -622
+                        ]
+                    },
+                    {
+                        "position": [
+                            -46,
+                            -601
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -21
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -37,
+                            -628
+                        ]
+                    },
+                    {
+                        "position": [
+                            -36,
+                            -621
+                        ]
+                    },
+                    {
+                        "position": [
+                            -37,
+                            -618
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -21
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -111,
+                            -623
+                        ]
+                    },
+                    {
+                        "position": [
+                            -114,
+                            -612
+                        ]
+                    },
+                    {
+                        "position": [
+                            -111,
+                            -602
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -21
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -76,
+                            -654
+                        ]
+                    },
+                    {
+                        "position": [
+                            -71,
+                            -659
+                        ]
+                    },
+                    {
+                        "position": [
+                            -74,
+                            -654
+                        ]
+                    }
+                ],
+                "position": [
+                    -2,
+                    -22
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -40,
+                            -660
+                        ]
+                    },
+                    {
+                        "position": [
+                            -34,
+                            -653
+                        ]
+                    },
+                    {
+                        "position": [
+                            -39,
+                            -656
+                        ]
+                    }
+                ],
+                "position": [
+                    -1,
+                    -22
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            -109,
+                            -653
+                        ]
+                    },
+                    {
+                        "position": [
+                            -114,
+                            -649
+                        ]
+                    },
+                    {
+                        "position": [
+                            -120,
+                            -660
+                        ]
+                    },
+                    {
+                        "position": [
+                            -110,
+                            -632
+                        ]
+                    },
+                    {
+                        "position": [
+                            -117,
+                            -632
+                        ]
+                    }
+                ],
+                "position": [
+                    -3,
+                    -22
+                ]
+            },
+            {
+                "enemies": [
+                    {
+                        "position": [
+                            6,
+                            -654
+                        ]
+                    },
+                    {
+                        "position": [
+                            5,
+                            -654
+                        ]
+                    },
+                    {
+                        "position": [
+                            4,
+                            -655
+                        ]
+                    }
+                ],
+                "position": [
+                    0,
+                    -22
+                ]
+            }
+        ]
+    },
+    "gamePlay": {
+        "gameViewPos": [
+            -2528.0,
+            -39840.0
+        ],
+        "zoomFactor": 5.260040283203125
+    },
+    "hero": {
+        "position": [
+            -40,
+            -623
+        ]
+    },
+    "world": {
+        "centerChunk": [
+            -1,
+            -21
+        ]
+    }
+}
