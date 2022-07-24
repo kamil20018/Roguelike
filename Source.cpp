@@ -34,7 +34,7 @@ int main() {
 	//std::ofstream file("Save.json");
 	//file << jsonfile;
 	//file.close();
-	std::cout << "dzialaj pls" << std::endl;
+	std::cout << "jebac git 123" << std::endl;
 	Settings::updateSettings();
 	//std::cout << std::format("a{}", 42);
 	Game game;
