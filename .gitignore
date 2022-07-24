@@ -11,3 +11,5 @@
 /.vs/slnx.sqlite
 *.obj
 /x64
+x64
+x64/
