@@ -36,6 +36,7 @@ int main() {
 	//file.close();
 	std::cout << "jebac git 123" << std::endl;
 	std::cout << "if this doesn't work i'll brick my pipi" << std::endl;
+	std::cout << "aaaaaaaaaaaaaaaaaa" << std::endl;
 	Settings::updateSettings();
 	//std::cout << std::format("a{}", 42);
 	Game game;

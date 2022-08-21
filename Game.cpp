@@ -13,9 +13,9 @@ Game::Game() : context(std::make_shared<Context>()) {
 	_assets->AddFont("pixel_font", "Resources/Fonts/manaspc.ttf");
 	_assets->AddTexture("goblin", "Resources/Textures/Enemies/Goblin.png");
 
-	//_states->AddState(std::make_unique<MainMenu>(this->context));
+	_states->AddState(std::make_unique<MainMenu>(this->context));
 	//_states->AddState(std::make_unique<GamePlay>(this->context));
-	_states->AddState(std::make_unique<UiTestState>(this->context));
+	//_states->AddState(std::make_unique<UiTestState>(this->context));
 
 
 }
