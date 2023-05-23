@@ -1,7 +1,7 @@
 #include "GamePlay.h"
 
 GamePlay::GamePlay(std::shared_ptr<Context> context, bool load) : context(context), mouseScrollDelta(0),
-mouseButtonDown(false), keyPressed(false), zoomFactor(1.0f)
+mouseButtonDown(false), keyPressed(false), zoomFactor(1.0f), passTurn(false)
 
 {
 
@@ -55,7 +55,6 @@ void GamePlay::loadGameInit() {
 	hero = std::make_unique<Hero>(_assets->GetTexture("hero"), saveFile["hero"]);
 	actorManager = std::make_unique<ActorManager>(context, world, saveFile["actorManager"]);
 }
-
 
 
 void GamePlay::Init() {
@@ -116,6 +115,9 @@ void GamePlay::ProcessInput() {
 				case sf::Keyboard::Subtract:
 					gameplayView.zoom(1.1f);
 					break;
+				case sf::Keyboard::Space:
+					passTurn = true;
+					break;
 			}
 		}
 		else if (event.type == sf::Event::MouseWheelMoved) {
@@ -130,21 +132,36 @@ void GamePlay::ProcessInput() {
 
 void GamePlay::Update() {
 
-	//position mouse outline
+	positionMouseOutline();
+	
+	if (mouseScrollDelta != 0) {
+		zoomView();
+	}
+
+	onClickMovement();
+
+	if (passTurn) {
+		enemyTurn();
+		passTurn = false;
+		return;
+	}
+
+	if (moveDir != sf::Vector2i(0, 0)) {
+		if (moveHero()) {
+			enemyTurn();
+		}
+	}
+}
+
+
+void GamePlay::positionMouseOutline() {
 	sf::Vector2i pixelPos = sf::Mouse::getPosition(*_window);
 	sf::Vector2f worldPos = _window->mapPixelToCoords(pixelPos);
 	mouseTilePos = sf::Vector2i((int)floor(worldPos.x / tileSize), (int)floor(worldPos.y / tileSize));
 	mouseOutline.setPosition(vecIntToFloat(mouseTilePos * tileSize));
+}
 
-
-	if (mouseButtonDown) {
-		mouseButtonDown = false;
-		this->heroPath = getPath(hero->getPosition(), mouseTilePos, true, false, true);
-		//std::cout << mouseTilePos.x << ", " << mouseTilePos.y << std::endl;
-	}
-
-
-	//zoom in / out with scroll wheel
+void GamePlay::zoomView() {
 	if (mouseScrollDelta > 0) {
 		zoomFactor *= 0.9f;
 		gameplayView.zoom(0.9f);
@@ -154,40 +171,63 @@ void GamePlay::Update() {
 		gameplayView.zoom(1.1f);
 	}
 	mouseScrollDelta = 0;
+}
 
-	//moving around the world map
-	if (keyPressed) {
-		heroPath.clear();
-		keyPressed = false;
+bool GamePlay::moveHero() {
+	sf::Vector2i heroDestination = hero->getPosition() + moveDir;
+
+	if (!world->isTraversable(heroDestination) || !actorManager->isTraversable(heroDestination)) { // 
+		std::cout << "destination unreachable" << std::endl;
+		moveDir = sf::Vector2i(0, 0);
+		return false;
+	}
+	hero->move(moveDir);
+	//moves view along with hero
+	gameplayView.move((float)Settings::getScaledTileSize() * vecIntToFloat(moveDir));
+	world->heroMoved(heroDestination);
+	actorManager->heroMoved(heroDestination);
+	moveDir = sf::Vector2i(0, 0);
+	std::cout << std::format("hero pos: {}, {}\n", hero->getPosition().x, hero->getPosition().y);
+	return true;
+}
+
+void GamePlay::onClickMovement() {
+	if (mouseButtonDown) {
+		mouseButtonDown = false;
+		this->heroPath = getPath(hero->getPosition(), mouseTilePos, true, false, true);
 	}
 
 	if (heroPath.size() != 0) {
 		moveDir = heroPath[0];
 		heroPath.erase(heroPath.begin());
 	}
+}
 
+void GamePlay::enemyTurn() {
 
-	if (moveDir != sf::Vector2i(0, 0)) {
-		sf::Vector2i heroDestination = hero->getPosition() + moveDir;
+	auto pathLen = [](sf::Vector2i pos1, sf::Vector2i pos2) {
+		sf::Vector2i t = pos2 - pos1;
+		t = sf::Vector2i(std::abs(t.x), std::abs(t.y));
+		int x = std::abs(t.x);
+		int y = std::abs(t.y);
+		int high = std::max(x, y);
+		int low = std::min(x, y);
+		return (float)(high - low) + 1.4f * low;
+	};
 
-		//if (!world->isTraversable(heroDestination) || !actorManager->isTraversable(heroDestination)) {
-		//	std::cout << "destination unreachable" << std::endl;
-		//}
-		if (!world->isTraversable(heroDestination) || !actorManager->isTraversable(heroDestination)) { // 
-			std::cout << "destination unreachable" << std::endl;
+	this->activeEnemies = actorManager->getEnemies();
+	for (auto enemy : activeEnemies) {
+		if (enemy->getViewDistance() > pathLen(enemy->getPosition(), hero->getPosition())) {
+			std::vector<sf::Vector2i> path = getPath(enemy->getPosition(), hero->getPosition(), true);
+			if (path.size() > 0) {
+				enemy->move(path[0]);
+				actorManager->updateEnemyChunks();
+			}
 		}
-		else {
-			hero->move(moveDir);
-			//moves view along with hero
-			gameplayView.move((float)Settings::getScaledTileSize() * vecIntToFloat(moveDir));
-			world->heroMoved(heroDestination);
-			actorManager->heroMoved(heroDestination);
-
-			actorManager->takeTurn();
-		}
-		moveDir = sf::Vector2i(0, 0);
 	}
 }
+
+
 
 void GamePlay::Draw() {
 	_window->clear(sf::Color(0, 0, 0));
@@ -202,14 +242,22 @@ void GamePlay::Draw() {
 	_window->draw(*actorManager);
 
 
+	
+
+
 	//draw on UI layer
 	_window->setView(this->UiView);
+
+	sf::Text text;
+	text.setFont(context->assets->GetFont("pixel_font"));
+	text.setString(std::format("x: {}, y: {}", mouseTilePos.x, mouseTilePos.y));
+	_window->draw(text);
 	//_window->draw(this->notification);
 	_window->display();
 	_window->setView(this->gameplayView);
+
+
 }
-
-
 
 void GamePlay::saveGame() {
 
@@ -241,9 +289,6 @@ sf::Vector2f GamePlay::vecIntToFloat(sf::Vector2i vec) {
 
 std::vector<sf::Vector2i> GamePlay::getPath(sf::Vector2i begin, sf::Vector2i end, bool unitVector, bool withStart, bool withEnd) {
 
-
-	std::cout << "start: " << begin.x << ", " << begin.y << std::endl;
-	std::cout << "end: " << end.x << ", " << end.y << std::endl;
 	const int ITERATIONS_CAP = 20000;
 
 	auto calcHCost = [](sf::Vector2i currNode, sf::Vector2i endNode) {
@@ -305,6 +350,7 @@ std::vector<sf::Vector2i> GamePlay::getPath(sf::Vector2i begin, sf::Vector2i end
 					}
 				}
 			}
+
 		}
 		iterations++;
 		if (iterations > ITERATIONS_CAP) {
@@ -325,29 +371,30 @@ std::vector<sf::Vector2i> GamePlay::getPath(sf::Vector2i begin, sf::Vector2i end
 		tempPos = closedMap.at(tempPos).parentPos;
 	}
 
-
-
-	if (unitVector) {
+	if (withStart) {
 		path.insert(path.begin(), begin);
+	}
+
+	if (withEnd) {
 		path.push_back(end);
-		for (int i = 0; i < path.size(); i++) {
-			path[i] -= begin;
+	}
+
+
+	if (unitVector and path.size() > 0) {
+		
+		if (path.size() == 1) {
+			path[0] -= begin;
+			return path;
 		}
+
 		std::vector<sf::Vector2i> tempPath;
 		for (int i = 0; i < path.size() - 1; i++) {
 			tempPath.push_back(path[i + 1] - path[i]);
 		}
+		tempPath.insert(tempPath.begin(), path[0] - begin);
 		path = tempPath;
 	}
-	else {
-		if (withStart) {
-			path.insert(path.begin(), begin);
-		}
 
-		if (withEnd) {
-			path.push_back(end);
-		}
-	}
 
 	return path;
 }

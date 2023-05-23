@@ -8,16 +8,14 @@ TileChunk::TileChunk(sf::Vector2i pos, std::vector<std::vector<TileNames>> tiles
 	size = Settings::getChunkSize();
 	this->chunkSpacing = 10;
 
-
-
 	generateDecorations(0.1f);
+
 
 	this->tileSize = (float)Settings::getTileSize();
 	sf::Vector2f offset = tileSize * sf::Vector2f((float)pos.x * size.x, (float)pos.y * size.y);
 	this->tileSet = &context->assets->GetTexture("tileSet");
 	tileVertices.setPrimitiveType(sf::Quads);
 	tileVertices.resize(size.x * size.y * 4);
-
 
 	for (int i = 0; i < size.x; i++) {
 		for (int j = 0; j < size.y; j++) {

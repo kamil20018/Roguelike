@@ -25,17 +25,25 @@ void ActorManager::draw(sf::RenderTarget& target, sf::RenderStates states) const
 		target.draw(chunks.at(chunkPos), states);
 	}
 }
-void ActorManager::takeTurn() {
-	for (auto pos : loadedChunks) {
-		chunks.at(pos).takeTurn();
-	}
+void ActorManager::updateEnemyChunks() {
 	for (auto pos : loadedChunks) {
 		auto enemies = chunks.at(pos).getOutOfBoundsEnemies();
 		for (auto& enemy : enemies) {
 			//std::cout << "pos in manager: " << enemy->getPosition().x << " " << enemy->getPosition().y << std::endl;
-			chunks.at(globalPosToChunk(enemy->getPosition())).addEnemy(std::move(enemy));
+			sf::Vector2i enemyPos = enemy->getPosition();
+			sf::Vector2i enemyChunkPos = globalPosToChunk(enemyPos);
+			chunks.at(enemyChunkPos).addEnemy(enemy);
 		}
 	}
+}
+
+std::vector<std::shared_ptr<Enemy>> ActorManager::getEnemies() {
+	std::vector<std::shared_ptr<Enemy>> enemies;
+	for (auto chunkPos : loadedChunks) {
+		std::vector<std::shared_ptr<Enemy>> chunkEnemies = chunks.at(chunkPos).getEnemies();
+		enemies.insert(enemies.end(), chunkEnemies.begin(), chunkEnemies.end());
+	}
+	return enemies;
 }
 
 json ActorManager::serialize() {
@@ -53,6 +61,7 @@ json ActorManager::serialize() {
 void ActorManager::updateEnemiesChunkPos() {
 }
 
+
 void ActorManager::updateLoadedChunks() {
 	loadedChunks.clear();
 	std::vector<sf::Vector2i> vectors = utils::unitVectors;
@@ -65,6 +74,17 @@ void ActorManager::updateLoadedChunks() {
 			chunks.insert({ chunkPos, enemyGenerator.generateChunk(chunkPos) });
 		}
 	}
+
+	for (auto chunk : chunks) {
+		std::cout << chunk.first.x << ", " << chunk.first.y << std::endl;
+	}
 }
+
+void ActorManager::log() {
+	for (auto pos : loadedChunks) {
+		chunks.at(pos).log();
+	}
+}
+
 
 

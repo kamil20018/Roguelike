@@ -203,6 +203,9 @@
     <ClInclude Include="TextField2.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
+    <ClInclude Include="WorldData.h">
+      <Filter>Header Files\Enemy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Tiles.json">

@@ -2,7 +2,7 @@
   "windowSize": [ 1280, 720 ],
   "tileSize": 64,
   "tileScale": 1,
-  "chunkSize": [ 40, 30 ],
+  "chunkSize": [ 30, 20 ],
   "seed": [
     2249157442,
     7987650717,

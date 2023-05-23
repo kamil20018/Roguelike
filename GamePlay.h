@@ -31,19 +31,23 @@ private:
 
 	void newGameInit();
 	void loadGameInit();
+	void positionMouseOutline();
+	void zoomView();
+	bool moveHero();
+	void onClickMovement();
+	void enemyTurn();
 
 	std::shared_ptr<Context> context;
 	std::shared_ptr<World> world; //done
 	std::unique_ptr<ActorManager> actorManager;
 	std::unique_ptr<Hero> hero; //done
-
+	std::vector<std::shared_ptr<Enemy>> activeEnemies;
 
 	sf::Vector2i moveDir;
 	std::vector<sf::Vector2i> heroPath;
 
 	sf::View gameplayView;
 	float zoomFactor;
-
 
 
 	sf::View UiView;
@@ -54,11 +58,12 @@ private:
 	bool mouseButtonDown;
 	sf::RectangleShape mouseOutline;
 	bool keyPressed;
+	bool passTurn;
 
 	TextField notification;
 
 	sf::Vector2f vecIntToFloat(sf::Vector2i vec);
-	std::vector<sf::Vector2i> getPath(sf::Vector2i begin, sf::Vector2i end, bool unitVector, bool withStart, bool withEnd);
+	std::vector<sf::Vector2i> getPath(sf::Vector2i begin, sf::Vector2i end, bool unitVector, bool withStart = false, bool withEnd = false);
 	void saveGame();
 	json serialize();
 

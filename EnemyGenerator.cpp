@@ -8,12 +8,14 @@ EnemyGenerator::EnemyGenerator(std::shared_ptr<Context> context, std::shared_ptr
 EnemyChunk EnemyGenerator::generateChunk(sf::Vector2i chunkPos) {
 	EnemyChunk chunk(chunkPos);
 	sf::Vector2i offset(chunkPos.x * Settings::getChunkSize().x, chunkPos.y * Settings::getChunkSize().y);
-	std::unique_ptr<Enemy> enemy1 = std::make_unique<Enemy>(_assets->GetTexture("goblin"), offset + sf::Vector2i(5, 5), world);
-	std::unique_ptr<Enemy> enemy2 = std::make_unique<Enemy>(_assets->GetTexture("goblin"), offset + sf::Vector2i(6, 6), world);
-	std::unique_ptr<Enemy> enemy3 = std::make_unique<Enemy>(_assets->GetTexture("goblin"), offset + sf::Vector2i(4, 4), world);
-	chunk.addEnemy(std::move(enemy1));
-	chunk.addEnemy(std::move(enemy2));
-	chunk.addEnemy(std::move(enemy3));
+	for (int i = 0; i < 3; i++) {
+		sf::Vector2i pos = offset + sf::Vector2i(i + 3, i + 3);
+		std::cout << std::format("new enemy pos: {}, {}\n", pos.x, pos.y);
+		if (world->isTraversable(pos)) {
+			std::shared_ptr<Enemy> enemy = std::make_shared<Enemy>(_assets->GetTexture("goblin"), pos, 7, world);
+			chunk.addEnemy(enemy);
+		}
+	}
 	return chunk;
 }
 
@@ -27,7 +29,7 @@ std::vector<EnemyChunk> EnemyGenerator::loadChunkFromJson(json saveData) {
 
 		for (auto enemy : enemyChunk["enemies"]) {
 			json pos = enemy["position"];
-			chunk.addEnemy(std::move(std::make_unique<Enemy>(_assets->GetTexture("goblin"), sf::Vector2i(pos[0], pos[1]), world)));
+			chunk.addEnemy(std::move(std::make_unique<Enemy>(_assets->GetTexture("goblin"), sf::Vector2i(pos[0], pos[1]), 7, world)));
 		}
 		generatedChunks.push_back(std::move(chunk));
 	}

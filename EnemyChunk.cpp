@@ -5,8 +5,8 @@ EnemyChunk::EnemyChunk(sf::Vector2i pos) {
 	this->size = Settings::getChunkSize();
 }
 
-void EnemyChunk::addEnemy(std::unique_ptr<Enemy> enemy) {
-	enemies.push_back(std::move(enemy));
+void EnemyChunk::addEnemy(std::shared_ptr<Enemy> enemy) {
+	enemies.push_back(enemy);
 }
 
 void EnemyChunk::draw(sf::RenderTarget& target, sf::RenderStates states) const {
@@ -15,9 +15,9 @@ void EnemyChunk::draw(sf::RenderTarget& target, sf::RenderStates states) const {
 	}
 }
 
-void EnemyChunk::takeTurn() {
+void EnemyChunk::takeTurn(WorldData data) {
 	for (auto& enemy : enemies) {
-		enemy->takeTurn();
+		enemy->takeTurn(data);
 		//if (!inBounds(enemy->getPosition())) {
 		//	std::cout << "not in bounds: " << enemy->getPosition().x << " " << enemy->getPosition().y << std::endl;
 		//}
@@ -34,16 +34,16 @@ bool EnemyChunk::isTraversable(sf::Vector2i pos) {
 	return true;
 }
 
-std::vector<std::unique_ptr<Enemy>> EnemyChunk::getOutOfBoundsEnemies() {
+std::vector<std::shared_ptr<Enemy>> EnemyChunk::getOutOfBoundsEnemies() {
 	std::vector<int> enemyIndices;
-	std::vector<std::unique_ptr<Enemy>> enemiesOutOfBounds;
+	std::vector<std::shared_ptr<Enemy>> enemiesOutOfBounds;
 	for (int i = enemies.size() - 1; i >= 0; i--) {
 		if (!inBounds(enemies[i]->getPosition())) {
 			enemyIndices.push_back(i);
 		}
 	}
 	for (int index : enemyIndices) {
-		enemiesOutOfBounds.push_back(std::move(enemies[index]));
+		enemiesOutOfBounds.push_back(enemies[index]);
 		enemies.erase(enemies.begin() + index);
 	}
 
@@ -63,6 +63,17 @@ json EnemyChunk::serialize() {
 
 sf::Vector2i EnemyChunk::getPosition() {
 	return this->position;
+}
+
+std::vector<std::shared_ptr<Enemy>> EnemyChunk::getEnemies() {
+	return this->enemies;
+}
+
+void EnemyChunk::log() {
+	std::cout << std::format("chunk pos: {}, {}\n", position.x, position.y);
+	for (auto enemy : enemies) {
+		std::cout << std::format("enemy pos: {}, {}\n", enemy->getPosition().x, enemy->getPosition().y);
+	}
 }
 
 bool EnemyChunk::inBounds(sf::Vector2i pos) {

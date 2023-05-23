@@ -1,13 +1,11 @@
 #include "Enemy.h"
 
-Enemy::Enemy(const sf::Texture& texture, sf::Vector2i position, std::shared_ptr<World> world) : texture(&texture) {
-	this->position = position;
-	this->world = world;
+Enemy::Enemy(const sf::Texture& texture, sf::Vector2i position, int viewDistance, std::shared_ptr<World> world) : texture(&texture), position(position), world(world), viewDistance(viewDistance) {
 }
 
-Enemy::Enemy(const sf::Texture& texture, sf::Vector2i position, std::shared_ptr<World> world, json saveData) : texture(&texture) {
-	this->world = world;
+Enemy::Enemy(const sf::Texture& texture, sf::Vector2i position, std::shared_ptr<World> world, json saveData) : texture(&texture), world(world) {
 	json pos = saveData["position"];
+	this->viewDistance = saveData["viewDistance"];
 	this->position = sf::Vector2i(pos[0], pos[1]);
 }
 
@@ -15,7 +13,7 @@ void Enemy::move(sf::Vector2i dir) {
 	this->position += dir;
 }
 
-void Enemy::takeTurn() {
+void Enemy::takeTurn(WorldData data) {
 	std::vector<sf::Vector2i> unitVectors{
 		sf::Vector2i(-1, 0),
 		sf::Vector2i(1, 0),
@@ -53,10 +51,14 @@ sf::Vector2i Enemy::getPosition() {
 	return position;
 }
 
+int Enemy::getViewDistance() {
+	return viewDistance;
+}
+
 json Enemy::serialize() {
 
 	json enemy;
 	enemy["position"] = { position.x, position.y };
-
+	enemy["viewDistance"] = viewDistance;
 	return enemy;
 }
