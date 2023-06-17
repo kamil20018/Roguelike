@@ -10,9 +10,7 @@ struct Context;
 class TileLoader {
 public:
 	static void loadTilesToContext(std::shared_ptr<Context>& context);
-	//template <typename T1>
-	//static void generateTileset(T1 t1, std::string name, std::shared_ptr<Context>& context, int mode);
-
+	static sf::Vector2i generateDecorTexturePositions();
 };
 
 

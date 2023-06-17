@@ -18,11 +18,7 @@ void EnemyChunk::draw(sf::RenderTarget& target, sf::RenderStates states) const {
 void EnemyChunk::takeTurn(WorldData data) {
 	for (auto& enemy : enemies) {
 		enemy->takeTurn(data);
-		//if (!inBounds(enemy->getPosition())) {
-		//	std::cout << "not in bounds: " << enemy->getPosition().x << " " << enemy->getPosition().y << std::endl;
-		//}
 	}
-	//getOutOfBoundsEnemies();
 }
 
 bool EnemyChunk::isTraversable(sf::Vector2i pos) {

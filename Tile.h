@@ -31,7 +31,9 @@ enum class DecorTiles {
 	FLOWERS_2,
 	WATER_LILY_1,
 	CATTAIL_1,
-	TREE_1
+	TREE_1,
+	BIG_TREE_1,
+	BIG_ROCK_1
 };
 
 inline const std::unordered_map<std::string, DecorTiles> decorString{
@@ -41,7 +43,26 @@ inline const std::unordered_map<std::string, DecorTiles> decorString{
 	{"flowers_2.png", DecorTiles::FLOWERS_2},
 	{"water_lily_1.png", DecorTiles::WATER_LILY_1},
 	{"cattail_1.png", DecorTiles::CATTAIL_1},
-	{"tree_1.png", DecorTiles::TREE_1}
+	{"tree_1.png", DecorTiles::TREE_1},
+	{"big_tree_1.png", DecorTiles::BIG_TREE_1},
+	{"big_rock_1.png", DecorTiles::BIG_ROCK_1}
+};
+
+inline const std::unordered_map<DecorTiles, sf::Vector2i> decorSize{
+	{DecorTiles::PEBBLES_1, sf::Vector2i(1, 1)},
+	{DecorTiles::PEBBLES_2, sf::Vector2i(1, 1)},
+	{DecorTiles::FLOWERS_1, sf::Vector2i(1, 1)},
+	{DecorTiles::FLOWERS_2, sf::Vector2i(1, 1)},
+	{DecorTiles::WATER_LILY_1, sf::Vector2i(1, 1)},
+	{DecorTiles::CATTAIL_1, sf::Vector2i(1, 1)},
+	{DecorTiles::TREE_1, sf::Vector2i(1, 1)},
+	{DecorTiles::BIG_TREE_1, sf::Vector2i(1, 2)},
+	{DecorTiles::BIG_ROCK_1, sf::Vector2i(2, 2)}
+};
+
+// this map gets filled whem tile loader loads textures
+inline std::unordered_map<DecorTiles, sf::Vector2i> decorTexturePos{
+
 };
 
 class Tile {

@@ -187,7 +187,7 @@ bool GamePlay::moveHero() {
 	world->heroMoved(heroDestination);
 	actorManager->heroMoved(heroDestination);
 	moveDir = sf::Vector2i(0, 0);
-	std::cout << std::format("hero pos: {}, {}\n", hero->getPosition().x, hero->getPosition().y);
+	//std::cout << std::format("hero pos: {}, {}\n", hero->getPosition().x, hero->getPosition().y);
 	return true;
 }
 

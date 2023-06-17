@@ -44,20 +44,25 @@ TileChunk::TileChunk(sf::Vector2i pos, std::vector<std::vector<TileNames>> tiles
 	int index = 0;
 	for (std::pair<DecorTiles, sf::Vector2i> decorPos : decorations) {
 		int decorNumber = static_cast<int>(decorPos.first);
-		int tu = decorNumber % (decorSet->getSize().x / (int)tileSize);
-		int tv = decorNumber / (decorSet->getSize().x / (int)tileSize);
+		//int tu = decorNumber % (decorSet->getSize().x / (int)tileSize);
+		//int tv = decorNumber / (decorSet->getSize().x / (int)tileSize);
+		int tu = decorTexturePos[decorPos.first].x;
+		int tv = decorTexturePos[decorPos.first].y;
+		
+		sf::Vector2i decorS = decorSize.at(decorPos.first);
+
 		int i = decorPos.second.x;
 		int j = decorPos.second.y;
 		sf::Vertex* quad = &decorVertices[index * 4];
 		quad[0].position = sf::Vector2f(i * tileSize, j * tileSize) + offset;
-		quad[1].position = sf::Vector2f((i + 1) * tileSize, j * tileSize) + offset;
-		quad[2].position = sf::Vector2f((i + 1) * tileSize, (j + 1) * tileSize) + offset;
-		quad[3].position = sf::Vector2f(i * tileSize, (j + 1) * tileSize) + offset;
+		quad[1].position = sf::Vector2f((i + decorS.x) * tileSize, j * tileSize) + offset;
+		quad[2].position = sf::Vector2f((i + decorS.x) * tileSize, (j + decorS.y) * tileSize) + offset;
+		quad[3].position = sf::Vector2f(i * tileSize, (j + decorS.y) * tileSize) + offset;
 
 		quad[0].texCoords = sf::Vector2f(tu * tileSize, tv * tileSize);
-		quad[1].texCoords = sf::Vector2f((tu + 1) * tileSize, tv * tileSize);
-		quad[2].texCoords = sf::Vector2f((tu + 1) * tileSize, (tv + 1) * tileSize);
-		quad[3].texCoords = sf::Vector2f(tu * tileSize, (tv + 1) * tileSize);
+		quad[1].texCoords = sf::Vector2f((tu + decorS.x) * tileSize, tv * tileSize);
+		quad[2].texCoords = sf::Vector2f((tu + decorS.x) * tileSize, (tv + decorS.y) * tileSize);
+		quad[3].texCoords = sf::Vector2f(tu * tileSize, (tv + decorS.y) * tileSize);
 
 		index++;
 	}

@@ -1,8 +1,8 @@
 #include "Tile.h"
 
 Tile::Tile(json j) : isTraversable(j["isTraversable"]), name(j["name"]) {
-	for (auto decoration : j["decorations"]) {
-		this->possibleDecorations.push_back(decoration);
+	for (auto decoration : j["decorations"].items()) {
+		this->possibleDecorations.push_back(decoration.key());
 	}
 }
 
