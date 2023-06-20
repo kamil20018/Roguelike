@@ -7,6 +7,7 @@
 #include "State.h"
 #include "Game.h"
 #include "GamePlay.h"
+#include "UiTestState.h"
 class MainMenu : public State {
 private:
 	std::shared_ptr<Context> context;

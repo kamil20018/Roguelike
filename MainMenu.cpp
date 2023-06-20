@@ -110,6 +110,8 @@ void MainMenu::Update() {
 		switch (currentButton) {
 			case 0:
 				context->states->AddState(std::make_unique<GamePlay>(context, false), true);
+				//context->states->AddState(std::make_unique<UiTestState>(context));
+				
 				break;
 			case 1:
 				context->states->AddState(std::make_unique<GamePlay>(context, true), true);

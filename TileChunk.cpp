@@ -8,7 +8,7 @@ TileChunk::TileChunk(sf::Vector2i pos, std::vector<std::vector<TileNames>> tiles
 	size = Settings::getChunkSize();
 	this->chunkSpacing = 10;
 
-	generateDecorations(0.1f);
+	generateDecorations(0.3f);
 
 
 	this->tileSize = (float)Settings::getTileSize();
@@ -134,5 +134,11 @@ void TileChunk::generateDecorations(float density) {
 		}
 		index++;
 	}
+
+	std::sort(decorations.begin(), decorations.end(),
+			[](const std::pair<DecorTiles, sf::Vector2i>& dec1, const std::pair <DecorTiles, sf::Vector2i>& dec2) {
+				return dec1.second.y < dec2.second.y;
+			}
+	);
 
 }

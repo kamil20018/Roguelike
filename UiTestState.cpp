@@ -1,5 +1,5 @@
 #include "UiTestState.h"
-
+#include "TileLoader.h"
 UiTestState::UiTestState(std::shared_ptr<Context>& context) : context(context) {
 
 
@@ -18,6 +18,8 @@ UiTestState::UiTestState(std::shared_ptr<Context>& context) : context(context) {
 	//this->w = 300;
 	//this->h = 300;
 	//this->counter = 0;
+
+	TileLoader::generateDecorTexturePositions();
 }
 
 UiTestState::~UiTestState() {
@@ -30,6 +32,8 @@ void UiTestState::Init() {
 	//	}
 	//}
 	//noise.getGradVals(sf::Vector2i(0, 0));
+
+
 }
 
 void UiTestState::ProcessInput() {
@@ -77,7 +81,10 @@ void UiTestState::Draw() {
 	//}
 
 	_window->clear(sf::Color(200, 0, 0));
-	_window->draw(field);
+	sf::Sprite sprite;
+	sprite.setTexture(context->assets->GetTexture("decorSet"));
+	_window->draw(sprite);
+	//_window->draw(field);
 	_window->display();
 }
 
