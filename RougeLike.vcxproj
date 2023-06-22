@@ -169,6 +169,7 @@
     <ClCompile Include="TileLoader.cpp" />
     <ClCompile Include="UiTestState.cpp" />
     <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="Window.cpp" />
     <ClCompile Include="World.cpp" />
     <ClCompile Include="WorldGenerator.cpp" />
   </ItemGroup>
@@ -197,6 +198,7 @@
     <ClInclude Include="UiTestState.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="VectorHash.h" />
+    <ClInclude Include="Window.h" />
     <ClInclude Include="World.h" />
     <ClInclude Include="WorldData.h" />
     <ClInclude Include="WorldGenerator.h" />

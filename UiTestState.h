@@ -10,6 +10,7 @@
 //#include "PerlinNoise.h"
 #include "TextField.h"
 #include "TextField2.h"
+#include "Window.h"
 struct Context;
 
 class UiTestState : public State {
@@ -22,7 +23,11 @@ public:
 	void Draw() override;
 private:
 	std::shared_ptr<Context> context;
-	TextField field;
+	sfui::Window window;
+	bool mouseHold;
+	bool mouseReleased;
+	
+	//TextField field;
 	//std::unordered_map<sf::Vector2i, Tile> tileMap;
 	//std::unique_ptr<Hero> hero;
 	//PerlinNoise noise;
